@@ -1,5 +1,8 @@
 body {
   display: flex;
+  background-color: green;
+  color: purple;
+  font-family: "Serif", "Times New Roman", monospace;
 }
 
 .logo {
@@ -8,4 +11,113 @@ body {
 
 .main {
   border: 1px solid;
+  
 }
+.gaudy-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .linkImg {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  p {
+    font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", "Patrick Hand", cursive;
+    font-size: 6em;
+    margin: 0;
+  }
+   .nav-link{
+    font-family: "Comic Sans MS", "Comic Sans", "Marker Felt", "Patrick Hand", cursive;
+    font-size: 2em;
+    margin: 0;
+  }
+  .link {
+    margin: 2em;
+  }
+  
+  .letter0 {
+    color: #1eeeee;
+    position: relative;
+    animation: colorful-sine 2s linear infinite;
+  }
+  
+  .letter1 {
+    color: #e421ae;
+    position: relative;
+    animation: colorful-sine 2s -1.75s linear infinite;
+  }
+  
+  .letter2 {
+    color: #fae52c;
+    position: relative;
+    animation: colorful-sine 2s -1.5s linear infinite;
+  }
+  
+  .letter3 {
+    color: #5edf87;
+    position: relative;
+    animation: colorful-sine 2s -1.25s linear infinite;
+  }
+  
+  .letter4 {
+    color: #279cf1;
+    position: relative;
+    animation: colorful-sine 2s -1s linear infinite;
+  }
+  .letter5 {
+    color: #1eeeee;
+    position: relative;
+    animation: colorful-sine 2s -0.75s linear infinite;
+  }
+  
+  .letter6 {
+    color: #e421ae;
+    position: relative;
+    animation: colorful-sine 2s -.5s linear infinite;
+  }
+  
+  .letter7 {
+    color: #fae52c;
+    position: relative;
+    animation: colorful-sine 2s -.25s linear infinite;
+  }
+  
+  .letter8 {
+    color: #5edf87;
+    position: relative;
+    animation: colorful-sine 2s  linear infinite;
+  }
+  
+  .letter9 {
+    color: #279cf1;
+    position: relative;
+    animation: colorful-sine 2s -1s linear infinite;
+  }
+  
+  /* The formula I used to calculate the top animation was -3cos(2pi*x). */
+  
+  @keyframes colorful-sine {
+    0%, 100% {color: #1eeeee; top: -3vw;}
+    5% {top: -2.853170vw;}
+    10% {top: -2.427051vw;}
+    15% {top: -1.763356vw;}
+    20% {color: #279cf1; top: -0.927051vw;}
+    25% {top: 0;}
+    30% {top: 0.927051vw;}
+    35% {top: 1.763356vw;}
+    40% {color: #5edf87; top: 2.427051vw;}
+    45% {top: 2.853170vw;}
+    50% {top: 3vw;}
+    55% {top: 2.853170vw;}
+    60% {color: #fae52c; top: 2.427051vw;}
+    65% {top: 1.763356vw;}
+    70% {top: 0.927051vw;}
+    75% {top: 0;}
+    80% {color: #e421ae; top: -0.927051vw;}
+    85% {top: -1.763356vw;}
+    90% {top: -2.427051vw;}
+    95% {top: -2.853170vw;}
+  }
