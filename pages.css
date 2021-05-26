@@ -1,13 +1,32 @@
+
+@font-face {
+  font-family: BadHandwriting;
+  src: url(https://www.stockio.com/free-font/bad-handwriting);
+}
+
 body {
   display: flex;
+  background-color: green;
+  color: purple;
+  font-family: "Serif", "Times New Roman", monospace;
+  height: fit-content;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.pic{
+  max-height: 300px;
+  object-fit: contain;
 }
 
 .logo {
   border: 1px solid;
+  flex: 20%;
 }
 
 .main {
   border: 1px solid;
+  flex: 20%;
 }
 
 .lists {
@@ -21,4 +40,42 @@ footer {
 
 .navbar {
   border: 1px solid;
+  flex: 20%;
 }
+
+.cityList{
+  background-color: pink;
+  position: relative;
+  top: 0; left: 0;
+}
+
+.landmarksList{
+  background-color: turquoise;
+  position: relative;
+  top: 0; left: 0;
+}
+
+.famousCitizensList{
+  background-color: orange;
+  position: relative;
+  top: 0; left: 0;
+}
+
+.city{
+  margin: 1em;
+  padding: 1em;
+  border: 20px dashed yellow;
+}
+
+.landmarks{
+  margin: 1em;
+  padding: 1em;
+  border: 20px dashed yellow;
+}
+
+.citizen{
+  margin: 1em;
+  padding: 1em;
+  border: 20px dashed yellow;
+}
+
